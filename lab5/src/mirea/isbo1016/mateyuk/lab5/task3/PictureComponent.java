@@ -8,6 +8,8 @@ import java.io.IOException;
 
 public class PictureComponent extends JComponent {
 
+    private ClassLoader loadRes = this.getClass().getClassLoader();
+
     public Image[] images = new Image[5];
     public static int num;
     public static int bufferNum;
@@ -19,7 +21,7 @@ public class PictureComponent extends JComponent {
         try
         {
              for (int i = 0; i < images.length; i++) {
-                images[i] = ImageIO.read(new File("C:/animatio/bat" + i + ".png"));
+                images[i] = ImageIO.read(loadRes.getResource("resources/bat" + i + ".png"));
             }
         }
         catch (IOException e)
