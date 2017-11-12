@@ -7,7 +7,6 @@ import mirea.isbo1016.mateyuk.lab3.task1.Spoon;
 import mirea.isbo1016.mateyuk.lab3.task2.Dog;
 import mirea.isbo1016.mateyuk.lab3.task2.Pitbull;
 import mirea.isbo1016.mateyuk.lab3.task2.Pug;
-import mirea.isbo1016.mateyuk.lab3.task3.Furniture;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,24 +21,12 @@ public class Main {
         dishes[1] = new Glass(false,65);
         dishes[2] = new Spoon(false, 45);
 
-
-        Furniture[] furnitures = new Furniture[3];
-
-
-        for (Dog Dog : dogs) {
+        for (Dog Dog : dogs)
             System.out.println(Dog);
-        }
 
         System.out.println("");
-        for (Dish dish : dishes) {
+
+        for (Dish dish : dishes)
             System.out.println(dish);
-        }
-
-        System.out.println("");
-        for (Furniture furniture : furnitures) {
-            System.out.println(furniture);
-
-        }
-
     }
 }
