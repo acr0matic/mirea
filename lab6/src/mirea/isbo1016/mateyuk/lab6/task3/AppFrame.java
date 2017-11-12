@@ -8,7 +8,6 @@ public class AppFrame extends JFrame {
     private JMenuBar menuBar = new JMenuBar();
     private JMenu colorTextMenu = new JMenu("Цвет текста");
     private JMenu textTypeMenu = new JMenu("Шрифт текста");
-    private JMenu exitButton = new JMenu("Закрыть");
     private Font[] Fonts = new Font[3];
 
     private JTextArea textField = new JTextArea("");
@@ -56,7 +55,6 @@ public class AppFrame extends JFrame {
 
         menuBar.add(colorTextMenu);
         menuBar.add(textTypeMenu);
-        menuBar.add(exitButton);
 
         this.add(textField);
 
